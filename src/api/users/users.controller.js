@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const usersService = require("./users.service");
-const authorize = require("_helpers/authorize");
-const Role = require("_helpers/role");
+const authorize = require("src/helpers/authorize");
+const Role = require("src/helpers/role");
 
 const authenticate = (req, res, next) => {
   usersService

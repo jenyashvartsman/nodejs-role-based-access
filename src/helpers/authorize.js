@@ -1,5 +1,5 @@
 const { expressjwt: jwt } = require("express-jwt");
-const { secret } = require("config.json");
+const { secret } = require("src/config/config.json");
 
 module.exports = authorize = (roles = []) => {
   if (typeof roles === "string") {
